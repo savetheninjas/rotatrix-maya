@@ -1,0 +1,19 @@
+start rx=-0.0000 ry=0.0000 rz=0.0000
+front stored rx=-0.0000 ry=0.0000 rz=0.0000 file=front__xm0.0_y0.0_z0.0.png bytes=4141307
+z30 stored rx=-0.0000 ry=0.0000 rz=29.9982 file=z30__xm0.0_y0.0_z30.0.png bytes=4141307
+y45 stored rx=-0.0000 ry=45.0000 rz=0.0000 file=y45__xm0.0_y45.0_z0.0.png bytes=4141307
+y90 stored rx=-0.0000 ry=90.0000 rz=0.0000 file=y90__xm0.0_y90.0_z0.0.png bytes=4141307
+y90_z180 stored rx=-0.0000 ry=90.0000 rz=180.0000 file=y90_z180__xm0.0_y90.0_z180.0.png bytes=4141307
+twist_y45 stored rx=-18.8820 ry=41.6410 rz=27.2351 file=twist_y45__xm18.9_y41.6_z27.2.png bytes=4141307
+twist_side stored rx=-89.9990 ry=70.0000 rz=90.0000 file=twist_side__xm90.0_y70.0_z90.0.png bytes=4141307
+side_plus_z stored rx=-0.0000 ry=90.0000 rz=199.9951 file=side_plus_z__xm0.0_y90.0_z200.0.png bytes=4141307
+side_xm30 stored rx=-30.0000 ry=90.0000 rz=180.0000 file=side_xm30__xm30.0_y90.0_z180.0.png bytes=4141307
+side_xm15 stored rx=-15.0000 ry=90.0000 rz=180.0000 file=side_xm15__xm15.0_y90.0_z180.0.png bytes=4141307
+side_x15 stored rx=15.0000 ry=90.0000 rz=180.0000 file=side_x15__x15.0_y90.0_z180.0.png bytes=4141307
+side_x30 stored rx=30.0000 ry=90.0000 rz=180.0000 file=side_x30__x30.0_y90.0_z180.0.png bytes=4141307
+side_y75 stored rx=-0.0000 ry=75.0000 rz=180.0000 file=side_y75__xm0.0_y75.0_z180.0.png bytes=4141307
+side_y105 stored rx=-0.0000 ry=105.0000 rz=180.0000 file=side_y105__xm0.0_y105.0_z180.0.png bytes=4141307
+side_z150 stored rx=-0.0000 ry=90.0000 rz=149.9963 file=side_z150__xm0.0_y90.0_z150.0.png bytes=4141307
+side_z210 stored rx=-0.0000 ry=90.0000 rz=209.9982 file=side_z210__xm0.0_y90.0_z210.0.png bytes=4141307
+side_drag stored rx=0.0000 ry=93.6000 rz=179.9733 file=side_drag__x0.0_y93.6_z180.0.png bytes=4141307
+restored the tool

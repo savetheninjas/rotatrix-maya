@@ -1,0 +1,140 @@
+# ZBrush profile for Rotatrix. Sparse overlay — bundled profiles stay intact.
+#
+# The pen plugin uses the same Win / Win+Shift chords. OSD only while
+# Win (or `) or Btn4 is held.
+#
+# Windows path Rotatrix loads: %LOCALAPPDATA%\Rotatrix\config.yaml
+# After copying, restart Rotatrix or Config → Apply.
+
+profiles:
+  zbrush:
+    description: >-
+      Hold Win (or `) to orbit; add Shift to pan. Or hold Btn4 to pan,
+      add Shift to orbit. The pen uses the same Win and Win+Shift chords.
+      OSD appears only while Win or Btn4 is held.
+    triggers:
+      - app:zbrush tag:app.zbrush
+      - app:ZBrush tag:app.zbrush
+    ball_mode: mouse
+    bindings:
+      - name: Orbit Mode
+        triggers:
+          - tag:orbit
+        navigation_mode: orbit
+        bindings:
+          - name: 3D Rotate
+            triggers:
+              - os:windows key:tapthru:win -btn:4 -key:shift
+              - key:tapthru:` -btn:4 -key:shift
+              - os:mac key:cmd -btn:4 -key:shift
+              - os:linux key:tapthru:super -btn:4 -key:shift
+            ball_mode: rotatrix
+            axis_map: obj_rotate
+            label:
+              text: Rotate
+              mode: replace
+            bindings:
+              - name: Snap View
+                triggers:
+                  - btn:1
+                snap_rotation: world
+              - name: Turntable Lock
+                triggers:
+                  - btn:2
+                snap_rotation: turntable_nearest
+          - name: 3D Pan
+            triggers:
+              - os:windows key:tapthru:win key:shift -btn:4
+              - key:tapthru:` key:shift -btn:4
+              - os:mac key:cmd key:shift -btn:4
+              - os:linux key:tapthru:super key:shift -btn:4
+            ball_mode: rotatrix
+            axis_map: obj_translate
+            label:
+              text: Pan
+              mode: replace
+            bindings:
+              - name: Snap View
+                triggers:
+                  - btn:1
+                snap_rotation: world
+              - name: Turntable Lock
+                triggers:
+                  - btn:2
+                snap_rotation: turntable_nearest
+          - name: 3D Pan Btn4
+            triggers:
+              - btn:4 -key:shift
+            ball_mode: rotatrix
+            axis_map: obj_translate
+            label:
+              text: Pan
+              mode: replace
+            bindings:
+              - name: 3D Rotate
+                triggers:
+                  - key:shift
+                axis_map: obj_rotate
+                label:
+                  text: Rotate
+                  mode: append
+              - name: Snap View
+                triggers:
+                  - btn:1
+                snap_rotation: world
+              - name: Turntable Lock
+                triggers:
+                  - btn:2
+                snap_rotation: turntable_nearest
+      - name: Free Camera Mode
+        triggers:
+          - tag:free_camera
+        navigation_mode: free_camera
+        bindings:
+          - name: Walk
+            triggers:
+              - os:windows key:tapthru:win
+              - key:tapthru:`
+              - os:mac key:cmd
+              - os:linux key:tapthru:super
+              - btn:4
+            ball_mode: rotatrix
+            axis_map: camera_locomotion_pos_yaw
+            on_exit:
+              zero_rate:
+                - tx
+                - ty
+                - tz
+                - rx
+                - ry
+                - rz
+            label:
+              text: Walk
+              mode: replace
+            bindings:
+              - name: Height
+                triggers:
+                  - btn:1
+                  - key:ctrl
+                axis_map: camera_height
+                on_exit:
+                  zero_rate:
+                    - ty
+                label:
+                  text: Height
+                  mode: append
+              - name: Rate Mode
+                triggers:
+                  - key:alt
+                mode: rate
+                label:
+                  text: (Rate)
+                  mode: append
+              - name: Look
+                triggers:
+                  - key:shift
+                  - btn:2
+                axis_map: camera_look_and_roll
+                label:
+                  text: Look
+                  mode: append
